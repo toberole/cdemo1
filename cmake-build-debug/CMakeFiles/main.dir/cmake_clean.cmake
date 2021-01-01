@@ -1,6 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/src/main.cpp.o"
-  "main"
+  "CMakeFiles/main.dir/src/demo1/Student.cpp.obj"
+  "CMakeFiles/main.dir/src/main.cpp.obj"
+  "main.exe"
+  "main.exe.manifest"
+  "main.lib"
   "main.pdb"
 )
 

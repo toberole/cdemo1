@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/apple/code/cpp_code/cdemo1/src/main.cpp" "/Users/apple/code/cpp_code/cdemo1/cmake-build-debug/CMakeFiles/main.dir/src/main.cpp.o"
+  "D:/code/cpp/cdemo1/src/demo1/Student.cpp" "D:/code/cpp/cdemo1/cmake-build-debug/CMakeFiles/main.dir/src/demo1/Student.cpp.obj"
+  "D:/code/cpp/cdemo1/src/main.cpp" "D:/code/cpp/cdemo1/cmake-build-debug/CMakeFiles/main.dir/src/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

@@ -6,11 +6,9 @@ class Student {
 public:
     Student();
 
-    Student(const Student &student);
+    Student(const Student &stu);
 
     Student(const Student &&student);
-
-    Student operator=(Student &student);
 
     ~Student();
 
