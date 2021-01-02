@@ -7,4 +7,4 @@ aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/include SRC_DIR)
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src/demo1 SRC_DIR)
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src SRC_DIR)
 
-add_executable(main ${SRC_DIR} src/demo1/Student.cpp include/demo1/Student.h)
+add_executable(main ${SRC_DIR})
