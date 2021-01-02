@@ -4,6 +4,7 @@
 #include "demo1/constructor_demo.h"
 #include "demo1/MyStr.h"
 #include "demo1/file_demo.h"
+#include "demo1/cpp_base_test.h"
 
 void test1_main() {
     // 调用默认构造
@@ -32,7 +33,8 @@ void test2_main() {
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    file_demo1();
+    variant_demo1();
+//    file_demo1();
 //    test2_main();
 //    test1_main();
 //    weak_ptr_demo();

@@ -5,14 +5,15 @@
 #include "demo1/Anim.h"
 
 // （C++98的方案，C++11已经抛弃）采用所有权模式。
+// 注意在windows Visual中标记为过时 直接编译通不过
 void auto_ptr_demo() {
-    std::auto_ptr<Anim> p1(new Anim());
-    p1->eat();
-    // p2剥夺了p1的所有权，但是当程序运行时访问p1将会报错
-    std::auto_ptr<Anim> p2 = p1;
-    p2->eat();
-    // 继续使用p1报错
-    // p1->eat();
+//    std::auto_ptr<Anim> p1(new Anim());
+//    p1->eat();
+//    // p2剥夺了p1的所有权，但是当程序运行时访问p1将会报错
+//    std::auto_ptr<Anim> p2 = p1;
+//    p2->eat();
+//    // 继续使用p1报错
+//    // p1->eat();
 }
 
 void unique_ptr_demo() {
