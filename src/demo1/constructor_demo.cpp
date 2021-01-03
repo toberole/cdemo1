@@ -27,3 +27,18 @@ void constructor_demo::test() {
 constructor_demo::~constructor_demo() {
     std::cout << "~ constructor_demo" << std::endl;
 }
+
+void constructor_demo_test() {
+    // 调用默认构造
+    constructor_demo c;
+    // 调用拷贝构造
+    constructor_demo c1(c);
+
+    // 调用move构造
+    constructor_demo c2 = std::move(c1);
+
+    constructor_demo c3;
+    constructor_demo c4;
+    // 调用赋值构造
+    c4 = c3;
+}

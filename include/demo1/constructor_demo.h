@@ -19,5 +19,7 @@ public:
     ~constructor_demo();
 };
 
+void constructor_demo_test();
+
 
 #endif //CDEMO1_CONSTRUCTOR_DEMO_H
