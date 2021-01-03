@@ -13,6 +13,10 @@ void variant_demo2();
 
 void string_view_demo();
 
+void mem_demo();
+
+void sizeof_demo();
+
 #ifdef __cplusplus
 }
 #endif

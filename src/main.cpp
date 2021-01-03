@@ -10,7 +10,9 @@
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    thread_demo2();
+    sizeof_demo();
+//    mem_demo();
+//    thread_demo2();
 //    thread_demo1();
 //    lambda_demo1();
 //    string_view_demo();
