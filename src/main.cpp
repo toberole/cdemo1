@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <map>
 #include "demo1/smart_ptr.h"
 #include "demo1/stl_demo.h"
 #include "demo1/constructor_demo.h"
@@ -30,6 +31,10 @@ int main() {
 
 //    list_demo();
 //    map_demo();
+
+    std::map<std::string, std::string, int> m;
+    m.insert("hello", "world");
+    std::cout << m["hello"] << std::endl;
 
     std::cout << "press any key to exit ......" << std::endl;
     std::cin.get();

@@ -139,7 +139,9 @@ void map_demo() {
     m[0] = 1;
     m[1] = 2;
     // put 元素 方式2
-    m.insert(std::pair<int, int>(3, 4));
+    // m.insert(std::pair<int, int>(3, 4));
+
+
 
     auto kv = m[1];
     std::cout << "kv: " << kv << std::endl;
