@@ -8,10 +8,12 @@
 #include "demo1/cpp_base_test.h"
 #include "demo1/lambda_demo.h"
 #include "demo1/thread_demo.h"
+#include "util/log.h"
+#include "demo1/test_log.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    sizeof_demo();
+//    sizeof_demo();
 //    mem_demo();
 //    thread_demo2();
 //    thread_demo1();
@@ -32,11 +34,15 @@ int main() {
 //    list_demo();
 //    map_demo();
 
-    std::map<std::string, std::string, int> m;
-    m.insert("hello", "world");
-    std::cout << m["hello"] << std::endl;
+//    std::map<std::string, std::string, int> m;
+//    m.insert("hello", "world");
+//    std::cout << m["hello"] << std::endl;
 
-    std::cout << "press any key to exit ......" << std::endl;
-    std::cin.get();
+//    test_log1();
+//    test_log2();
+    LOGI("hello", 1);
+
+//    std::cout << "press any key to exit ......" << std::endl;
+//    std::cin.get();
     return 0;
 }
