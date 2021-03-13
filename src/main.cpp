@@ -10,6 +10,7 @@
 #include "demo1/thread_demo.h"
 #include "util/log.h"
 #include "demo1/test_log.h"
+#include "demo1/test_mem.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
@@ -41,6 +42,8 @@ int main() {
 //    test_log1();
 //    test_log2();
     LOGI("hello", 1);
+
+    test_mem1();
 
 //    std::cout << "press any key to exit ......" << std::endl;
 //    std::cin.get();
