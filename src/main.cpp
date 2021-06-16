@@ -15,7 +15,10 @@
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
-    test1_demo2();
+
+    test2_demo2();
+
+//    test1_demo2();
 
 //    sizeof_demo();
 //    mem_demo();
