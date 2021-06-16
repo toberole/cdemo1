@@ -19,8 +19,21 @@ set(CMAKE_CXX_FLAGS "-std=c++1z")
 include_directories(${CMAKE_CURRENT_LIST_DIR}/include)
 
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/include SRC_DIR)
+
+aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/include/demo2 SRC_DIR)
+
+aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/include/demo3 SRC_DIR)
+
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/include/fake_sp SRC_DIR)
+
+aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src/util SRC_DIR)
+
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src/demo1 SRC_DIR)
+
+aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src/demo2 SRC_DIR)
+
+aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src/demo3 SRC_DIR)
+
 aux_source_directory(${CMAKE_CURRENT_LIST_DIR}/src SRC_DIR)
 
 add_executable(main ${SRC_DIR})

@@ -11,9 +11,12 @@
 #include "util/log.h"
 #include "demo1/test_log.h"
 #include "demo1/test_mem.h"
+#include "demo2/test_demo2.h"
 
 int main() {
     std::cout << "Hello, World!" << std::endl;
+    test1_demo2();
+
 //    sizeof_demo();
 //    mem_demo();
 //    thread_demo2();
@@ -41,9 +44,9 @@ int main() {
 
 //    test_log1();
 //    test_log2();
-    LOGI("hello", 1);
 
-    test_mem1();
+
+//    test_mem1();
 
 //    std::cout << "press any key to exit ......" << std::endl;
 //    std::cin.get();

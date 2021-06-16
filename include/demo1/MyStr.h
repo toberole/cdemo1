@@ -18,14 +18,14 @@ public:
         cout << "constructor" << endl;
         id = _id;
         name = new char[strlen(_name) + 1];
-        strcpy_s(name, strlen(_name) + 1, _name);
+//        strcpy_s(name, strlen(_name) + 1, _name);
     }
 
     MyStr(const MyStr &str) {
         cout << "copy constructor" << endl;
         id = str.id;
         name = new char[strlen(str.name) + 1];
-        strcpy_s(name, strlen(str.name) + 1, str.name);
+//        strcpy_s(name, strlen(str.name) + 1, str.name);
     }
 
     MyStr &operator=(const MyStr &str)//赋值运算符
@@ -37,7 +37,7 @@ public:
             this->id = str.id;
             int len = strlen(str.name);
             name = new char[len + 1];
-            strcpy_s(name, strlen(str.name) + 1, str.name);
+//            strcpy_s(name, strlen(str.name) + 1, str.name);
         }
         return *this;
     }
