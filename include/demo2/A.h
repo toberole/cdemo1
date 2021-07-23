@@ -13,6 +13,8 @@ public:
 
     A(const A &a);
 
+    A &operator=(const A &a);
+
     A(const A &&a);
 
     static void a1();

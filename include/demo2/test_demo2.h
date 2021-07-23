@@ -5,4 +5,6 @@ void test1_demo2();
 
 void test2_demo2();
 
+void test3_demo2();
+
 #endif //CDEMO1_TEST_DEMO2_H

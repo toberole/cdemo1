@@ -18,6 +18,11 @@ A::A(int n) : i(n)/* 直接初始化成员i */ {
     // i = n;
 }
 
+A &A::operator=(const A &a) {
+    std::cout << "operator=(const A &a) ......" << std::endl;
+    return *this;
+}
+
 A::A(const A &a) {
     std::cout << "A &a ......" << std::endl;
 }
