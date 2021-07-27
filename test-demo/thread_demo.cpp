@@ -19,9 +19,9 @@ void test1()
 
     printf("test1 thread ......\n");
 }
+
 int main(int argc, char const *argv[])
 {
-
     test1();
     return 0;
 }
