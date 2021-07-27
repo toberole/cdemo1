@@ -45,18 +45,13 @@ my_malloc_hook(size_t size, const void *caller)
     return result;
 }
 /*free hook is same like malloc*/
-static void
-my_free_hook(void *ptr, const void *caller)
+static void my_free_hook(void *ptr, const void *caller)
 {
-    .....
 }
 /*main*/
 int main(void)
 {
-    char *p;
-
-    p = malloc(10);
+    char *p = malloc(10);
     free(p);
-
     return 0;
 }
