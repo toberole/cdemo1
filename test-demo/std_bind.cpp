@@ -53,6 +53,9 @@ void test()
     // const char *g = "hello";
     // 去掉const指针const属性
     // char *h = const_cast<char *>(g);
+
+
+    
 }
 
 int main(int argc, char const *argv[])
