@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <iostream>
 
 /**
  * Lambda表达式完整的声明格式如下：
@@ -84,10 +85,12 @@ void test1()
     };
 
     int k = 0;
+    printf("1 ...... k address: %p\n", &k);
     auto lambal6 = [k]() mutable
     {
         // 修改K
         k++;
+        printf("2 ...... k address: %p\n", &k);
     };
 
     int t = 9;
@@ -109,9 +112,27 @@ void test1()
     printf("t: %d\n", t);
 }
 
+void test2()
+{
+    // 注意 mutable
+    size_t t = 9;
+    auto f = [t]() mutable
+    { return ++t; };
+    std::cout << f() << std::endl;
+    std::cout << f() << std::endl;
+    std::cout << "t:" << t << std::endl;
+
+    std::cout << "########################" << t << std::endl;
+    // size_t t1 = 9;
+    // // cannot assign to a variable captured by copy in a non-mutable lambda
+    // auto f1 = [t1](){ ++t1; };
+    // f1();
+    // std::cout << "t1:" << t1 << std::endl;
+}
+
 int main(int argc, char const *argv[])
 {
 
-    test1();
+    test2();
     return 0;
 }

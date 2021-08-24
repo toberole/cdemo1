@@ -2,6 +2,13 @@
 #include <memory>
 #include <iostream>
 
+class Demo
+{
+public:
+    Demo() {}
+    ~Demo() {}
+};
+
 /**
  * std::weak_ptr 每次 lock() 都会导致自身use_count自增一次
  */
@@ -22,6 +29,7 @@ void test1()
     std::cout << "weak_ptr use_count() = " << d.use_count() << std::endl;
     std::cout << "shared_ptr use_count() = " << d.use_count() << std::endl;
 }
+
 void test2_2()
 {
     std::shared_ptr<Demo> d = std::make_shared<Demo>(1);
